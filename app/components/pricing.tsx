@@ -192,7 +192,7 @@ const Pricing = () => {
     <section className="relative py-14 md:py-18 lg:py-22">
       <div className="container">
         {/* Header */}
-        <div className="text-center space-y-3 mb-10 md:mb-15 xl:mb-20">
+        <div className="text-center space-y-3 mb-12 md:mb-15 xl:mb-20">
           <h6 className="gradient-text font-cld600 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize">
             Pick Your Plan. <br /> Multiply Your Earnings.
           </h6>

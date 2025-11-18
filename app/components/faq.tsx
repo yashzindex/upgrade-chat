@@ -2,6 +2,8 @@
 import React, { useState, useRef, MutableRefObject, useEffect } from "react";
 import Image from "next/image";
 import arrowDown from "@/public/image/svg/arrowDown.svg";
+import faqGradient from "@/public/image/faqGradient.png";
+
 
 // ----------------------
 // Types
@@ -92,6 +94,10 @@ const Faq: React.FC<FaqProps> = ({ items = [] }) => {
             );
           })}
         </div>
+      </div>
+
+      <div className="absolute top-[10%] bottom-0 left-0 right-0 -z-1">
+        <Image src={faqGradient} alt="faqGradient" className="w-full h-full" />
       </div>
     </section>
   );

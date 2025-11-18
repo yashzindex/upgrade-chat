@@ -1,5 +1,6 @@
 import React from "react";
 import BFCliptext from "@/public/image/svg/BFCliptext.svg";
+import vanishGradient from "@/public/image/vanishGradient.png";
 import Image from "next/image";
 import Countdown from "./countdown";
 import Link from "next/link";
@@ -36,6 +37,10 @@ const VanishIn = () => {
             </Link>
           </div>
         </div>
+      </div>
+      {/* background image */}
+      <div className="absolute inset-0 -z-1">
+        <Image src={vanishGradient} alt="vanishGradient" className="w-full h-full" />
       </div>
     </section>
   );

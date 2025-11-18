@@ -11,6 +11,7 @@ import ActNow from "./components/actNow";
 import Users from "./components/users";
 import Offer from "./components/offer";
 import Pricing from "./components/pricing";
+import actPlanBg from "@/public/image/actPlanBg.png";
 
 export default function Home() {
   const faqItems: FaqItem[] = [
@@ -36,8 +37,14 @@ export default function Home() {
       <Unmissiable />
       <Offer />
       <Users />
+      <div className="relative">
       <ActNow />
       <Pricing />
+
+      <div className="absolute top-0 left-0 right-0 h-70/100 -z-1">
+        <Image src={actPlanBg} alt="actPlanBg" className="w-full h-full" />
+      </div>
+      </div>
       <HowEasy />
       {/* <Works /> */}
       <VanishIn />
