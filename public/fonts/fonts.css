@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "space_groteskmedium";
+  src: url("spacegrotesk-medium-webfont.woff2") format("woff2"),
+    url("spacegrotesk-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "space_groteskregular";
+  src: url("spacegrotesk-regular-webfont.woff2") format("woff2"),
+    url("spacegrotesk-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "sf_pro_displayregular";
+  src: url("sfprodisplayregular-webfont.woff2") format("woff2"),
+    url("sfprodisplayregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "clash_displaybold";
+  src: url("clashdisplay-bold-webfont.woff2") format("woff2"),
+    url("clashdisplay-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "clash_displaymedium";
+  src: url("clashdisplay-medium-webfont.woff2") format("woff2"),
+    url("clashdisplay-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "clash_displayregular";
+  src: url("clashdisplay-regular-webfont.woff2") format("woff2"),
+    url("clashdisplay-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "clash_displaysemibold";
+  src: url("clashdisplay-semibold-webfont.woff2") format("woff2"),
+    url("clashdisplay-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "satoshiregular";
+  src: url("satoshi-regular-webfont.woff2") format("woff2"),
+    url("satoshi-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UrbanistMedium";
+  src: url("UrbanistMedium.woff2") format("woff2"),
+    url("UrbanistMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterSemiBold";
+  src: url("InterSemiBold.woff2") format("woff2"),
+    url("InterSemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PoppinsMedium";
+  src: url("PoppinsMedium.woff2") format("woff2"),
+    url("PoppinsMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
