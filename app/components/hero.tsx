@@ -48,7 +48,7 @@ const Hero = () => {
                     <h1 className="font-clashDisplay font-bold gradient-text text-4xl sm:text-5xl xl:text-6xl xxl:text-7xl tracking-[1%]">
                       Biggest Deal Ever...
                     </h1>
-                    <div className="text-white font-sfPro400 text-xl md:text-2xl xl:text-[28px] xxl:text-[32px] space-y-2">
+                    <div className="text-white/90 font-sfPro400 text-xl md:text-2xl xl:text-[28px] xxl:text-[32px] space-y-2">
                       <p>
                         This Black Friday, we’re giving away more than ever
                         before

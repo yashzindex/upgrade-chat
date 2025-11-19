@@ -5,27 +5,27 @@ import Link from "next/link";
 import Marquee from "react-fast-marquee";
 
 const marqueeItems = [
-  "BLACK FRIDAY OFFERS",
-  "BLACK FRIDAY OFFERS",
-  "BLACK FRIDAY OFFERS",
-  "BLACK FRIDAY OFFERS",
-  "BLACK FRIDAY OFFERS",
-  "BLACK FRIDAY OFFERS",
-  "BLACK FRIDAY OFFERS",
-  "BLACK FRIDAY OFFERS",
-  "BLACK FRIDAY OFFERS",
-  "BLACK FRIDAY OFFERS",
-  "BLACK FRIDAY OFFERS",
-  "BLACK FRIDAY OFFERS",
-  "BLACK FRIDAY OFFERS",
+  "BLACK FRIDAY MEGA DEAL",
+  "BLACK FRIDAY MEGA DEAL",
+  "BLACK FRIDAY MEGA DEAL",
+  "BLACK FRIDAY MEGA DEAL",
+  "BLACK FRIDAY MEGA DEAL",
+  "BLACK FRIDAY MEGA DEAL",
+  "BLACK FRIDAY MEGA DEAL",
+  "BLACK FRIDAY MEGA DEAL",
+  "BLACK FRIDAY MEGA DEAL",
+  "BLACK FRIDAY MEGA DEAL",
+  "BLACK FRIDAY MEGA DEAL",
+  "BLACK FRIDAY MEGA DEAL",
+  "BLACK FRIDAY MEGA DEAL",
 ];
 
 const EndingSoon = () => {
   return (
-    <section className="relative pb-9 overflow-hidden">
+    <section className="relative pb-9 overflow-hidden pt-20 5xl:pt-40">
       <div className="relative pt-40 md:pt-65 xxl:pt-71">
         {/* slider red */}
-        <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-10 lg:h-16 xxl:h-19 -rotate-11 sm:-rotate-7 z-10 -mx-5">
+        <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-10 lg:h-16 xxl:h-19 -rotate-11 sm:-rotate-4 z-10 -mx-5">
           {/* <div className="absolute inset-0"> */}
           <Marquee className="bg-commonRed py-2! sm:py-3! lg:py-5! xxl:py-6! **:divide-x-4 **:divide-white!">
             {marqueeItems.map((item, index) => (

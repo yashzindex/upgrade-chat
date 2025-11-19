@@ -38,6 +38,7 @@
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
   --breakpoint-xxl: 1440px;
+  --breakpoint-5xl: 2200px;
 }
 
 @utility container {
@@ -136,7 +137,7 @@ html {
 }
 
 .gradient-text {
-  background: linear-gradient(-90deg, #ffffff 30%, #999999 100%);
+  background: linear-gradient(180deg, #ffffff 30%, #999999 100%);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;

@@ -50,7 +50,7 @@ const Unmissiable: React.FC = () => {
             <p>Free Money, Real Fast</p>
           </div>
 
-          <h3 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize">
+          <h3 className="gradient-text font-clashDisplay font-medium text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize">
             Why This Deal is Unmissable?
           </h3>
         </div>
@@ -67,7 +67,7 @@ const Unmissiable: React.FC = () => {
                     <Image
                       src={icon}
                       alt={`icon${index + 1}`}
-                      className="max-w-6"
+                      className="max-w-6 xl:max-w-8"
                     />
                   </span>
                 </div>

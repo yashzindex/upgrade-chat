@@ -104,7 +104,7 @@ const plans = [
     subtitle: "For creators just starting to monetize their communities.",
     discount: "50",
     discountImg: off50,
-    oldPrice: "$1188",
+    oldPrice: "$1,188",
     price: "$588",
     period: "/ per month",
     highlight: false,
@@ -125,7 +125,7 @@ const plans = [
     subtitle: "For mid-sized communities ready to scale automation",
     discount: "40",
     discountImg: off40,
-    oldPrice: "$1428",
+    oldPrice: "$1,428",
     price: "$828",
     period: "/ per month",
     highlight: false, // glowing middle card
@@ -147,8 +147,8 @@ const plans = [
       "For established communities or agencies managing multiple servers.",
     discount: "25",
     discountImg: off25,
-    oldPrice: "$2388",
-    price: "$1718",
+    oldPrice: "$2,388",
+    price: "$1,718",
     period: "/ per month",
     highlight: true,
     button: "Start Automating",
@@ -213,7 +213,7 @@ const plans = [
     subtitle: "For mid-sized communities ready to scale automation",
     discount: "40",
     discountImg: off40,
-    oldPrice: "$1995",
+    oldPrice: "$1,995",
     price: "$699",
     period: "/ per month",
     highlight: false, // glowing middle card
@@ -239,8 +239,8 @@ const plans = [
       "For established communities or agencies managing multiple servers.",
     discount: "25",
     discountImg: off25,
-    oldPrice: "$2388",
-    price: "$1718",
+    oldPrice: "$2,388",
+    price: "$1,718",
     period: "/ per month",
     highlight: false,
     button: "Start Automating",
@@ -309,7 +309,7 @@ const Pricing = () => {
         <div className="relative w-fit mx-auto flex justify-center mb-10 md:mb-15 xl:mb-20">
           <div className="relative overflow-hidden w-fit md:w-120 mx-auto border border-white backdrop-blur-md rounded-xl flex">
             <button
-              className={`cursor-pointer capitalize flex-1 p-4.5 font-clashDisplay font-semibold text-lg md:text-xl tracking-wider leading-none transition ${
+              className={`cursor-pointer capitalize flex-1 py-3 px-2 sm:p-4.5 font-clashDisplay font-semibold text-sm sm:text-base md:text-lg xl:text-xl tracking-wider leading-none transition ${
                 billing === "monthly" ? "bg-white text-black" : "text-white"
               }`}
               onClick={() => setBilling("monthly")}
@@ -317,7 +317,7 @@ const Pricing = () => {
               Monthly
             </button>
             <button
-              className={`cursor-pointer capitalize flex-1 p-4.5 font-clashDisplay font-semibold text-lg md:text-xl tracking-wider leading-none transition ${
+              className={`cursor-pointer capitalize flex-1 py-3 px-2 sm:p-4.5 font-clashDisplay font-semibold text-sm sm:text-base md:text-lg xl:text-xl tracking-wider leading-none transition ${
                 billing === "annually" ? "bg-white text-black" : "text-white"
               }`}
               onClick={() => setBilling("annually")}
@@ -325,7 +325,7 @@ const Pricing = () => {
               Annually
             </button>
             <button
-              className={`cursor-pointer capitalize flex-1 p-4.5 font-clashDisplay font-semibold text-lg md:text-xl tracking-wider leading-none transition ${
+              className={`cursor-pointer capitalize flex-1 py-3 px-2 sm:p-4.5 font-clashDisplay font-semibold text-sm sm:text-base md:text-lg xl:text-xl tracking-wider leading-none transition ${
                 billing === "lifetime" ? "bg-white text-black" : "text-white"
               }`}
               onClick={() => setBilling("lifetime")}
@@ -334,7 +334,7 @@ const Pricing = () => {
             </button>
           </div>
           {/* offer */}
-          <div className="size-22 absolute -top-10 -right-10">
+          <div className="size-10 md:size-14 xl:size-22 absolute -top-6 md:-top-8 xl:-top-10 -right-6 md:-right-8 xl:-right-10">
             <Image
               src={offer50round}
               alt="offer50round"
@@ -392,10 +392,10 @@ const Pricing = () => {
                   </p>
                 )}
                 <div className="flex items-center gap-3">
-                  <p className="text-white font-clashDisplay text-[40px] xxl:text-[44px] font-bold leading-none">
+                  <p className="text-white font-clashDisplay text-[40px] xxl:text-[44px] font-medium leading-none">
                     {plan.price}
                   </p>
-                  <p className="text-white/60 text-sm">{plan.period}</p>
+                  <p className="text-white/60 text-sm font-grotesk400">{plan.period}</p>
                 </div>
               </div>
 
@@ -403,7 +403,7 @@ const Pricing = () => {
               <button
                 className={`mt-6 w-full py-3 rounded-xl font-clashDisplay font-semibold tracking-widest ${
                   plan.highlight
-                    ? "bg-white text-black shadow-[0_0_20px_#ff2d2d]"
+                    ? "bg-white text-commonRed shadow-[0_0_20px_#ff2d2d]"
                     : "bg-linear-to-r from-[#ffffff0d] to-transparent border border-white/30 text-white"
                 }`}
               >

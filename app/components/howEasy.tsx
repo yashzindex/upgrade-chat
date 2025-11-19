@@ -88,8 +88,8 @@ const HowEasy = () => {
                       </div>
                     </div>
                     {/* image */}
-                    <div className="h-5 sm:h-10 absolute sm:group-even:top-1! bottom-1 -right-6 sm:-right-1 max-sm:rotate-90 group-last:hidden sm:hidden xl:block">
-                      <Image src={lineVector} alt="lineVector" className="max-sm:h-full" />
+                    <div className="h-5 sm:h-10 absolute sm:group-even:top-1! bottom-2 -right-6 sm:-right-1 max-sm:rotate-90 group-last:hidden max=sm:hidden sm:hidden xl:block">
+                      <Image src={lineVector} alt="lineVector" className="max-sm:h-full h-full" />
                     </div>
                     {/* blur */}
                     <div className="bg-linear-to-tl from-black to-[#250000] size-10 absolute top-0 left-0 z-1"></div>
