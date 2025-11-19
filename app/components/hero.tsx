@@ -57,7 +57,7 @@ const Hero = () => {
                   <div className="flex max-md:flex-col items-center gap-6 xl:gap-8">
                     <Link
                       href="/"
-                      className="text-white font-cld600 text-base md:text-lg xl:text-2xl xxl:text-[28px] tracking-wide leading-tight md:leading-[72%] text-center uppercase bg-commonRed border-2 border-commonRed redBtnShadow p-4 sm:px-5 sm:py-5 xl:py-6 hover:bg-commonRed/50 transition-all duration-300"
+                      className="text-white font-cld600 text-base md:text-lg xl:text-2xl xxl:text-[28px] tracking-wide leading-tight md:leading-[72%] text-center uppercase bg-commonRed border-2 border-commonRed shadow-redBtnShadow p-4 sm:px-5 sm:py-5 xl:py-6 hover:bg-commonRed/50 transition-all duration-300"
                     >
                       Get My $100 Bonus
                     </Link>

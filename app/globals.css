@@ -27,6 +27,8 @@
   --font-poppins500: "PoppinsMedium", Arial, sans-serif;
 
   --shadow-9xl: 0px 0px 20.4px 3px #f2181e;
+  --shadow-redBtnShadow: 2px 1px 77.7px 0 #ca0b0b;
+  --shadow-owner: 0px 0px 26.9px -1px rgba(237, 5, 11, 0.78);
 
   /* breakpoints */
   --breakpoint-xxs: 389px;
@@ -68,9 +70,55 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* background: 
-linear-gradient(90.00deg, #ffffff0d 0%, #FFFFFF 100%)
-; */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Clash Display', sans-serif;
+  }
+
+/* Custom Scrollbar Styling - Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff0000 0%, #cc0000 50%, #990000 100%);
+  border-radius: 10px;
+  border: 2px solid #000000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5),
+    inset 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff3333 0%, #ff0000 50%, #cc0000 100%);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.8),
+    inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(180deg, #cc0000 0%, #990000 50%, #660000 100%);
+}
+
+::-webkit-scrollbar-corner {
+  background: #000000;
+}
+
+/* Custom Scrollbar Styling - Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff0000 #1a1a1a;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
 
 /* Font loading states */
 .font-loading {
@@ -91,10 +139,6 @@ linear-gradient(90.00deg, #ffffff0d 0%, #FFFFFF 100%)
 
 .textStroke {
   -webkit-text-stroke: 1px #ca0b0b;
-}
-
-.redBtnShadow {
-  box-shadow: 2px 1px 77.7px 0 #ca0b0b;
 }
 
 .clockBg {
@@ -176,4 +220,10 @@ linear-gradient(90.00deg, #ffffff0d 0%, #FFFFFF 100%)
 
 .clockBg {
   animation: flip 1s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .rfm-overlay {
+    display: none !important;
+  }
 }

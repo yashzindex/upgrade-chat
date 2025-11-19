@@ -12,6 +12,7 @@ import Users from "./components/users";
 import Offer from "./components/offer";
 import Pricing from "./components/pricing";
 import actPlanBg from "@/public/image/actPlanBg.png";
+import unmissable from "@/public/image/unmissable.png";
 
 export default function Home() {
   const faqItems: FaqItem[] = [
@@ -33,20 +34,25 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <FewDays />
-      <Unmissiable />
+      <div className="relative">
+        <FewDays />
+        <Unmissiable />
+        <div className="absolute top-10/100 -bottom-25/100 left-0 right-0 -z-1">
+          <Image src={unmissable} alt="unmissable" className="w-full h-full" />
+        </div>
+      </div>
       <Offer />
       <Users />
       <div className="relative">
-      <ActNow />
-      <Pricing />
+        <ActNow />
+        <Pricing />
 
-      <div className="absolute top-0 left-0 right-0 h-70/100 -z-1">
-        <Image src={actPlanBg} alt="actPlanBg" className="w-full h-full" />
-      </div>
+        <div className="absolute top-0 left-0 right-0 h-70/100 -z-1">
+          <Image src={actPlanBg} alt="actPlanBg" className="w-full h-full" />
+        </div>
       </div>
       <HowEasy />
-      {/* <Works /> */}
+      <Works />
       <VanishIn />
       <Faq items={faqItems} />;
       <EndingSoon />
