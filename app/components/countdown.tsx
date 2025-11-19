@@ -55,7 +55,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           {splitDigits(timeLeft.days).map((digit, i) => (
             <div
               key={i}
-              className="clockBg textStroke text-white max-[480px]:text-5xl text-3xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-cld700 leading-snug py-4.5 px-4 flex items-center justify-center rounded-md"
+              className="clockBg textStroke text-white max-[480px]:text-5xl text-3xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-clashDisplay font-bold leading-snug py-4.5 px-4 flex items-center justify-center rounded-md"
             >
               {digit}
             </div>
@@ -72,7 +72,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           {splitDigits(timeLeft.hours).map((digit, i) => (
             <div
               key={i}
-              className="clockBg textStroke text-white max-[480px]:text-5xl text-3xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-cld700 leading-snug py-4.5 px-4 flex items-center justify-center rounded-md"
+              className="clockBg textStroke text-white max-[480px]:text-5xl text-3xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-clashDisplay font-bold leading-snug py-4.5 px-4 flex items-center justify-center rounded-md"
             >
               {digit}
             </div>
@@ -89,7 +89,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           {splitDigits(timeLeft.minutes).map((digit, i) => (
             <div
               key={i}
-              className="clockBg textStroke text-white max-[480px]:text-5xl text-3xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-cld700 leading-snug py-4.5 px-4 flex items-center justify-center rounded-md"
+              className="clockBg textStroke text-white max-[480px]:text-5xl text-3xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-clashDisplay font-bold leading-snug py-4.5 px-4 flex items-center justify-center rounded-md"
             >
               {digit}
             </div>

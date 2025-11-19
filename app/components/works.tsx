@@ -63,7 +63,7 @@ const Works = () => {
 
       <div className="container">
         <div className="mb-9 md:mb-10 xl:mb-13 relative z-10">
-          <h6 className="gradient-text font-cld600 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize text-center">
+          <h6 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize text-center">
             Proof That It Works
           </h6>
         </div>
@@ -90,13 +90,13 @@ const Works = () => {
                     className="rounded-full w-full h-full"
                   />
                 </div>
-                <div className="h-full text-white/60 font-cld400 text-base md:text-lg leading-snug tracking-wide">
+                <div className="h-full text-white/60 font-clashDisplay font-normal text-base md:text-lg leading-snug tracking-wide">
                   <p>{item.text}</p>
                 </div>
               </div>
 
               <div className="mt-auto block">
-                <h6 className="gradient-text font-cld600 text-sm md:text-base -tracking-tight">
+                <h6 className="gradient-text font-clashDisplay font-semibold text-sm md:text-base -tracking-tight">
                   {item.author}
                 </h6>
               </div>
@@ -122,7 +122,7 @@ const Works = () => {
             </span>
           </div>
           <div className="flex max-md:flex-col items-center gap-3">
-            <p className="text-commonRed font-cld500 text-xl leading-tight">
+            <p className="text-commonRed font-clashDisplay font-medium text-xl leading-tight">
               Join 100,000+ Creators Who Already Made the Switch
             </p>
             <Arrow />

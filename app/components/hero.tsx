@@ -6,6 +6,7 @@ import Marquee from "react-fast-marquee";
 import logo from "@/public/image/logo.png";
 import heroBg from "@/public/image/heroBg.png";
 import offerTag from "@/public/image/offerTag.png";
+import offerTagHero from "@/public/image/svg/offerTagHero.svg";
 
 const marqueeItems = [
   "BLACK FRIDAY OFFERS",
@@ -44,7 +45,7 @@ const Hero = () => {
               <div className="lg:col-span-9 max-lg:order-2">
                 <div className="h-full flex flex-col justify-center py-10 lg:pt-22 lg:pb-12">
                   <div className="mb-15 space-y-3 max-md:text-center">
-                    <h1 className="font-cld700 gradient-text text-4xl sm:text-5xl xl:text-6xl xxl:text-7xl tracking-[1%]">
+                    <h1 className="font-clashDisplay font-bold gradient-text text-4xl sm:text-5xl xl:text-6xl xxl:text-7xl tracking-[1%]">
                       Biggest Deal Ever...
                     </h1>
                     <div className="text-white font-sfPro400 text-xl md:text-2xl xl:text-[28px] xxl:text-[32px] space-y-2">
@@ -57,13 +58,13 @@ const Hero = () => {
                   <div className="flex max-md:flex-col items-center gap-6 xl:gap-8">
                     <Link
                       href="/"
-                      className="text-white font-cld600 text-base md:text-lg xl:text-2xl xxl:text-[28px] tracking-wide leading-tight md:leading-[72%] text-center uppercase bg-commonRed border-2 border-commonRed shadow-redBtnShadow p-4 sm:px-5 sm:py-5 xl:py-6 hover:bg-commonRed/50 transition-all duration-300"
+                      className="text-white font-clashDisplay font-semibold text-base md:text-lg xl:text-2xl xxl:text-[28px] tracking-wide leading-tight md:leading-[72%] text-center uppercase bg-commonRed border-2 border-commonRed shadow-redBtnShadow p-4 sm:px-5 sm:py-5 xl:py-6 hover:bg-commonRed/50 transition-all duration-300"
                     >
                       Get My $100 Bonus
                     </Link>
                     <Link
                       href="/"
-                      className="text-white font-cld600 text-base md:text-lg xl:text-2xl xxl:text-[28px] tracking-wide leading-tight md:leading-[72%] text-center uppercase border-2 border-white p-4 sm:px-5 sm:py-5 xl:py-6 hover:text-commonRed hover:border-commonRed transition-all duration-300"
+                      className="text-white font-clashDisplay font-semibold text-base md:text-lg xl:text-2xl xxl:text-[28px] tracking-wide leading-tight md:leading-[72%] text-center uppercase border-2 border-white p-4 sm:px-5 sm:py-5 xl:py-6 hover:text-commonRed hover:border-commonRed transition-all duration-300"
                     >
                       {" "}
                       Claim My Black Friday Credits
@@ -76,8 +77,8 @@ const Hero = () => {
               <div className="lg:col-span-3 max-lg:order-1 lg:-mt-12 xl:-mt-20">
                 <div className="w-50/100 mx-auto lg:w-full h-full">
                   <Image
-                    src={offerTag}
-                    alt="offerTag"
+                    src={offerTagHero}
+                    alt="offerTagHero"
                     className="h-full w-full"
                   />
                 </div>
@@ -93,7 +94,7 @@ const Hero = () => {
               {marqueeItems.map((item, index) => (
                 <div
                   key={index}
-                  className="px-8 font-cld600 text-black text-base md:text-lg xl:text-2xl xxl:text-[28px] leading-tight whitespace-nowrap"
+                  className="px-8 font-clashDisplay font-semibold text-black text-base md:text-lg xl:text-2xl xxl:text-[28px] leading-tight whitespace-nowrap"
                 >
                   <p>{item}</p>
                 </div>

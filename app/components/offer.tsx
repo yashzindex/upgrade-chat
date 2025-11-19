@@ -35,7 +35,7 @@ const Offer = () => {
           {marqueeItems.map((item, index) => (
             <div
               key={index}
-              className="px-8 text-white font-cld600 text-base md:text-lg lg:text-2xl xx:text-3xl xxl:text-4xl leading-[80%] whitespace-nowrap"
+              className="px-8 text-white font-clashDisplay font-semibold text-base md:text-lg lg:text-2xl xx:text-3xl xxl:text-4xl leading-[80%] whitespace-nowrap"
             >
               <p>{item}</p>
             </div>

@@ -45,7 +45,7 @@ const Faq: React.FC<FaqProps> = ({ items = [] }) => {
     <section className="relative pt-9 md:pt-12 xl:pt-15 xxl:pt-17.5">
       <div className="container">
         <div className="text-center mb-12">
-          <h6 className="gradient-text font-cld600 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize">
+          <h6 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize">
             Frequently Asked Questions
           </h6>
         </div>
@@ -61,7 +61,7 @@ const Faq: React.FC<FaqProps> = ({ items = [] }) => {
                   onClick={() => toggleAccordion(index)}
                   className="cursor-pointer w-full flex justify-between items-center gap-5 text-left"
                 >
-                  <h6 className="font-cld500 text-white text-lg md:text-xl xl:text-2xl tracking-widest">
+                  <h6 className="font-clashDisplay font-medium text-white text-lg md:text-xl xl:text-2xl tracking-widest">
                     {faq.question}
                   </h6>
 
@@ -86,7 +86,7 @@ const Faq: React.FC<FaqProps> = ({ items = [] }) => {
                       : "0px",
                   }}
                 >
-                  <div className="mt-2 font-cld400 text-white/70 text-lg md:text-xl xl:text-2xl tracking-widest space-y-2 w-85/100">
+                  <div className="mt-2 font-clashDisplay font-normal text-white/70 text-lg md:text-xl xl:text-2xl tracking-widest space-y-2 w-85/100">
                     <p>{faq.answer}</p>
                   </div>
                 </div>

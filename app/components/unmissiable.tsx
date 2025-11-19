@@ -46,11 +46,11 @@ const Unmissiable: React.FC = () => {
     <section className="py-10 md:py-13 xl:py-16 xxl:py-21">
       <div className="container">
         <div className="text-center mb-5 md:mb-10 xl:mb-13">
-          <div className="p-2 md:p-4 w-fit mx-auto mb-3 bg-white text-commonRed font-cld600 uppercase text-lg sm:text-2xl md:text-3xl xxl:text-[32px]">
+          <div className="p-2 md:p-4 w-fit mx-auto mb-3 bg-white text-commonRed font-clashDisplay font-semibold uppercase text-lg sm:text-2xl md:text-3xl xxl:text-[32px]">
             <p>Free Money, Real Fast</p>
           </div>
 
-          <h3 className="gradient-text font-cld600 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize">
+          <h3 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize">
             Why This Deal is Unmissable?
           </h3>
         </div>
@@ -72,7 +72,7 @@ const Unmissiable: React.FC = () => {
                   </span>
                 </div>
 
-                <h3 className="font-cld600 text-[#E6E6E6] text-lg md:text-xl xl:text-[22px]">
+                <h3 className="font-clashDisplay font-semibold text-[#E6E6E6] text-lg md:text-xl xl:text-[22px]">
                   {title}
                 </h3>
               </div>

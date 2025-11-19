@@ -26,7 +26,7 @@ const ActNow = () => {
     <section className="relative py-9 md:py-12 xl:py-17 xxl:py-22">
       <div className="container">
         <div className="space-y-3 text-center mb-8 md:mb-10 xl:mb-12">
-          <h5 className="gradient-text font-cld600 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize text-center">
+          <h5 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize text-center">
             Why Act Now?
           </h5>
 

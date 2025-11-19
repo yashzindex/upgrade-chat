@@ -54,7 +54,7 @@ const Users = () => {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-white font-cld500 text-2xl sm:text-3xl md:text-4xl xl:text-5xl capitalize">
+                  <h3 className="text-white font-clashDisplay font-medium text-2xl sm:text-3xl md:text-4xl xl:text-5xl capitalize">
                     {card.title}
                   </h3>
                 </div>
@@ -76,7 +76,7 @@ const Users = () => {
                 </ul>
 
                 {/* Button */}
-                <button className="mt-8 md:mt-10 w-full border border-white rounded-xl py-4 px-5 text-white font-cld600 text-base md:text-lg xl:text-xl leading-tight tracking-wide group-hover:bg-white group-hover:text-commonRed group-hover:shadow-9xl transition-all duration-300">
+                <button className="mt-8 md:mt-10 w-full border border-white rounded-xl py-4 px-5 text-white font-clashDisplay font-semibold text-base md:text-lg xl:text-xl leading-tight tracking-wide group-hover:bg-white group-hover:text-commonRed group-hover:shadow-9xl transition-all duration-300">
                   {card.buttonText}
                 </button>
               </div>

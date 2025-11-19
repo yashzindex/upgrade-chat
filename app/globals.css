@@ -14,6 +14,7 @@
   --font-mono: var(--font-geist-mono);
 
   /* fonts */
+  --font-clashDisplay: "Clash Display", Arial, sans-serif;
   --font-grotesk500: "space_groteskmedium", Arial, sans-serif;
   --font-grotesk400: "space_groteskregular", Arial, sans-serif;
   --font-sfPro400: "sf_pro_displayregular", Arial, sans-serif;
@@ -71,9 +72,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Clash Display', sans-serif;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Clash Display", sans-serif;
+}
 
 /* Custom Scrollbar Styling - Webkit (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {

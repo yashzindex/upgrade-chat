@@ -10,7 +10,7 @@ const VanishIn = () => {
     <section className="relative py-9 md:py-12 xl:py-15 xxl:py-17.5">
       <div className="container">
         <div className="w-full max-w-188 mx-auto">
-          <div className="w-full max-w-128 mx-auto">
+          <div className="w-full max-w-lg mx-auto">
             <div className="">
               <Image
                 src={BFCliptext}
@@ -20,7 +20,7 @@ const VanishIn = () => {
             </div>
           </div>
           <div className="text-center mb-8">
-            <div className="gradient-text font-cld500 text-2xl md:text-3xl xl:text-3xl xxl:text-[40px] leading-tight tracking-wider">
+            <div className="gradient-text font-clashDisplay font-medium text-2xl md:text-3xl xl:text-3xl xxl:text-[40px] leading-tight tracking-wider">
               <p>vanish in:</p>
             </div>
           </div>
@@ -31,7 +31,7 @@ const VanishIn = () => {
           <div className="mt-14 text-center">
             <Link
               href="/"
-              className="block w-fit mx-auto text-commonRed font-cld600 text-base md:text-xl xl:text-2xl xxl:text-[28px] leading-tight tracking-[1px] capitalize text-center py-4 xl:py-6 px-5 xl:px-3.5 bg-white rounded-xl shadow-[0_0_27.70px_-1px_#F2181E] hover:bg-commonRed hover:text-white transition-all duration-300"
+              className="block w-fit mx-auto text-commonRed font-clashDisplay font-semibold text-base md:text-xl xl:text-2xl xxl:text-[28px] leading-tight tracking-[1px] capitalize text-center py-4 xl:py-6 px-5 xl:px-3.5 bg-white rounded-xl shadow-[0_0_27.70px_-1px_#F2181E] hover:bg-commonRed hover:text-white transition-all duration-300"
             >
               I Want My 50% OFF + $100 Bonus Before It’s Gone
             </Link>

@@ -13,6 +13,7 @@ import Offer from "./components/offer";
 import Pricing from "./components/pricing";
 import actPlanBg from "@/public/image/actPlanBg.png";
 import unmissable from "@/public/image/unmissable.png";
+import Footer from "./components/footer";
 
 export default function Home() {
   const faqItems: FaqItem[] = [
@@ -56,6 +57,7 @@ export default function Home() {
       <VanishIn />
       <Faq items={faqItems} />;
       <EndingSoon />
+      <Footer />
     </>
   );
 }

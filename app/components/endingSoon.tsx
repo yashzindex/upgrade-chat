@@ -31,7 +31,7 @@ const EndingSoon = () => {
             {marqueeItems.map((item, index) => (
               <div
                 key={index}
-                className="px-8 text-white font-cld600 text-base md:text-lg lg:text-2xl xx:text-3xl xxl:text-4xl leading-none whitespace-nowrap"
+                className="px-8 text-white font-clashDisplay font-semibold text-base md:text-lg lg:text-2xl xx:text-3xl xxl:text-4xl leading-none whitespace-nowrap"
               >
                 <p>{item}</p>
               </div>
@@ -46,7 +46,7 @@ const EndingSoon = () => {
             {marqueeItems.map((item, index) => (
               <div
                 key={index}
-                className="px-8 text-commonRed font-cld600 text-base md:text-lg lg:text-2xl xx:text-3xl xxl:text-4xl leading-none whitespace-nowrap"
+                className="px-8 text-commonRed font-clashDisplay font-semibold text-base md:text-lg lg:text-2xl xx:text-3xl xxl:text-4xl leading-none whitespace-nowrap"
               >
                 <p>{item}</p>
               </div>
@@ -60,14 +60,14 @@ const EndingSoon = () => {
       <div className="relative z-10">
         <div className="container">
           <div className="space-y-12 text-center">
-            <div className="*:block text-white font-cld700  text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-snug tracking-wide space-y-2">
+            <div className="*:block text-white font-clashDisplay font-bold  text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-snug tracking-wide space-y-2">
               <h6>Up to 50% OFF + $100 Cashback.</h6>
               <h6>ENDING SOON.</h6>
             </div>
 
             <Link
               href="/"
-              className="block w-fit mx-auto text-commonRed font-cld600 text-base md:text-lg xl:text-2xl leading-tight tracking-[1px] capitalize text-center py-4 xl:py-5.5 px-5 xl:px-7 bg-white rounded-xl hover:bg-commonRed hover:text-white transition-all duration-300"
+              className="block w-fit mx-auto text-commonRed font-clashDisplay font-semibold text-base md:text-lg xl:text-2xl leading-tight tracking-[1px] capitalize text-center py-4 xl:py-5.5 px-5 xl:px-7 bg-white rounded-xl hover:bg-commonRed hover:text-white transition-all duration-300"
             >
               Claim My Offer Now
             </Link>

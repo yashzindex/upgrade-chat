@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "@/public/fonts/fonts.css";
-import { Analytics } from "@/components/Analytics";
+import { Analytics } from "./components/Analytics";
 export const metadata: Metadata = {
   title:
     "Upgrade.chat - Black Friday Sale | Up to 65% OFF + Up to $500 Cash Bonuses",
@@ -28,7 +28,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <Analytics />
+        {children}
+      </body>
     </html>
   );
 }

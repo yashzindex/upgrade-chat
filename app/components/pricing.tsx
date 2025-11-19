@@ -128,7 +128,7 @@ const plans = [
     oldPrice: "$1428",
     price: "$828",
     period: "/ per month",
-    highlight: true, // glowing middle card
+    highlight: false, // glowing middle card
     button: "Start Automating",
     features: [
       "Up to 5,000 members",
@@ -150,7 +150,7 @@ const plans = [
     oldPrice: "$2388",
     price: "$1718",
     period: "/ per month",
-    highlight: false,
+    highlight: true,
     button: "Start Automating",
     features: [
       "Up to 25,000 members",
@@ -183,6 +183,105 @@ const plans = [
       "Revenue-sharing or API licensing options",
     ],
   },
+  {
+    tag: "lifetime",
+    id: "ignite",
+    title: "Ignite",
+    subtitle: "For creators just starting to monetize their communities.",
+    discount: "50",
+    discountImg: off50,
+    oldPrice: "$795",
+    price: "$279",
+    period: "/ per month",
+    highlight: false,
+    button: "Start Automating",
+    features: [
+      "Up to 1,500 Active Subscribers",
+      "One Store and Discord Server",
+      "Automated Notification DMs",
+      "Standard Analytics Dashboard",
+      "Stripe and PayPal Integrations",
+      "Direct Daily Payouts",
+      "4.9% Platform Fee",
+      "0.00 Per Transaction Fee",
+    ],
+  },
+  {
+    tag: "lifetime",
+    id: "elevate",
+    title: "Elevate",
+    subtitle: "For mid-sized communities ready to scale automation",
+    discount: "40",
+    discountImg: off40,
+    oldPrice: "$1995",
+    price: "$699",
+    period: "/ per month",
+    highlight: false, // glowing middle card
+    button: "Start Automating",
+    features: [
+      "Up to 3,000 Active Subscribers",
+      "Up to 10 Stores & Discord Servers",
+      "Automated Notification DMs",
+      "Custom Branded Store & Checkout Pages",
+      "Advanced Analytics & Engagement Reports",
+      "Priority Support + Onboarding",
+      "Stripe and PayPal Integrations",
+      "Direct Daily Payouts",
+      "3.9% Platform Fee",
+      "0.00 Per Transaction Fee",
+    ],
+  },
+  {
+    tag: "lifetime",
+    id: "scale",
+    title: "Scale",
+    subtitle:
+      "For established communities or agencies managing multiple servers.",
+    discount: "25",
+    discountImg: off25,
+    oldPrice: "$2388",
+    price: "$1718",
+    period: "/ per month",
+    highlight: false,
+    button: "Start Automating",
+    features: [
+      "Unlimited Active Subscribers",
+      "Unlimited Stores & Discord Servers",
+      "Automated Notification DMs",
+      "Custom Branded Store & Checkout Pages",
+      "Advanced Analytics & Tracking Reports",
+      "Account Manager and Onboarding Support",
+      "V2: Access to over 100 Payment Gateways",
+      "V2: Advanced API, Zapier and Make Access",
+      "V2: Advanced Affiliate Program Access",
+      "V2: Advanced CRM System & Team Access",
+      "Stripe and PayPal Integrations",
+      "Direct Daily Payouts",
+      "2.9% Platform Fee",
+      "0.00 Per Transaction Fee",
+    ],
+  },
+  {
+    tag: "lifetime",
+    id: "enterprise",
+    title: "Enterprise",
+    subtitle:
+      "For brands, networks, or SaaS platforms integrating Upgrade.Chat tech.",
+    discount: null,
+    discountImg: null,
+    oldPrice: null,
+    price: "Custom",
+    period: "",
+    highlight: true,
+    button: "Contact Sales",
+    features: [
+      "Unlimited members & servers",
+      "Dedicated account manager",
+      "Custom integrations (CRM, AI bots, etc.)",
+      "SLA + uptime guarantee",
+      "Revenue-sharing or API licensing options",
+    ],
+  },
 ];
 
 const Pricing = () => {
@@ -193,7 +292,7 @@ const Pricing = () => {
       <div className="container">
         {/* Header */}
         <div className="text-center space-y-3 mb-12 md:mb-15 xl:mb-20">
-          <h6 className="gradient-text font-cld600 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize">
+          <h6 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize">
             Pick Your Plan. <br /> Multiply Your Earnings.
           </h6>
 
@@ -208,9 +307,9 @@ const Pricing = () => {
 
         {/* Billing Toggle */}
         <div className="relative w-fit mx-auto flex justify-center mb-10 md:mb-15 xl:mb-20">
-          <div className="relative overflow-hidden w-60 md:w-99 mx-auto border border-white backdrop-blur-md rounded-xl flex">
+          <div className="relative overflow-hidden w-fit md:w-120 mx-auto border border-white backdrop-blur-md rounded-xl flex">
             <button
-              className={`cursor-pointer flex-1 p-4.5 font-cld600 text-lg md:text-xl tracking-wider leading-none transition ${
+              className={`cursor-pointer capitalize flex-1 p-4.5 font-clashDisplay font-semibold text-lg md:text-xl tracking-wider leading-none transition ${
                 billing === "monthly" ? "bg-white text-black" : "text-white"
               }`}
               onClick={() => setBilling("monthly")}
@@ -218,12 +317,20 @@ const Pricing = () => {
               Monthly
             </button>
             <button
-              className={`cursor-pointer flex-1 p-4.5 font-cld600 text-lg md:text-xl tracking-wider leading-none transition ${
+              className={`cursor-pointer capitalize flex-1 p-4.5 font-clashDisplay font-semibold text-lg md:text-xl tracking-wider leading-none transition ${
                 billing === "annually" ? "bg-white text-black" : "text-white"
               }`}
               onClick={() => setBilling("annually")}
             >
               Annually
+            </button>
+            <button
+              className={`cursor-pointer capitalize flex-1 p-4.5 font-clashDisplay font-semibold text-lg md:text-xl tracking-wider leading-none transition ${
+                billing === "lifetime" ? "bg-white text-black" : "text-white"
+              }`}
+              onClick={() => setBilling("lifetime")}
+            >
+              lifetime
             </button>
           </div>
           {/* offer */}
@@ -238,11 +345,11 @@ const Pricing = () => {
 
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
-          {filteredPlans.map((plan) => (
+          {filteredPlans.map((plan,index) => (
             <div
-              key={plan.id}
+              key={index}
               className={`relative rounded-3xl py-8 md:py-10 px-6 md:px-8 border pricingBg ${
-                plan.highlight ? "border-commonRed/30" : "border-transparent"
+                plan.highlight ? "border-commonRed/40" : "border-transparent"
               }`}
             >
               {/* Discount Badge */}
@@ -269,7 +376,7 @@ const Pricing = () => {
 
               {/* Title */}
               <div className="flex flex-col gap-1">
-                <h3 className="text-white text-2xl font-cld600">
+                <h3 className="text-white text-2xl font-clashDisplay font-semibold">
                   {plan.title}
                 </h3>
                 <p className="text-white font-sfPro400 text-sm">
@@ -280,12 +387,12 @@ const Pricing = () => {
               {/* Pricing */}
               <div className="mt-6">
                 {plan.oldPrice && (
-                  <p className="line-through text-[#7B7B7B] text-2xl font-cld400 leading-none">
+                  <p className="line-through text-[#7B7B7B] text-2xl font-clashDisplay font-normal leading-none">
                     {plan.oldPrice}
                   </p>
                 )}
                 <div className="flex items-center gap-3">
-                  <p className="text-white font-cld500 text-[40px] xxl:text-[44px] font-bold leading-none">
+                  <p className="text-white font-clashDisplay text-[40px] xxl:text-[44px] font-bold leading-none">
                     {plan.price}
                   </p>
                   <p className="text-white/60 text-sm">{plan.period}</p>
@@ -294,7 +401,7 @@ const Pricing = () => {
 
               {/* Button */}
               <button
-                className={`mt-6 w-full py-3 rounded-xl font-cld600 tracking-widest ${
+                className={`mt-6 w-full py-3 rounded-xl font-clashDisplay font-semibold tracking-widest ${
                   plan.highlight
                     ? "bg-white text-black shadow-[0_0_20px_#ff2d2d]"
                     : "bg-linear-to-r from-[#ffffff0d] to-transparent border border-white/30 text-white"
@@ -324,7 +431,7 @@ const Pricing = () => {
               <div className=""></div>
               {/* rotate border */}
               <div
-                className={`absolute -top-2 left-20/100 right-20/100 h-3 ${
+                className={`absolute -top-2 left-20/100 right-20/100 h-4 ${
                   plan.highlight ? "block" : "hidden"
                 }  `}
               >
