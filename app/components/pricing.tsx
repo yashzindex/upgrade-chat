@@ -9,6 +9,7 @@ import off40 from "@/public/image/svg/off40.svg";
 import off25 from "@/public/image/svg/off25.svg";
 import offer50round from "@/public/image/svg/offer50round.svg";
 import userBorder from "@/public/image/svg/userBorder.svg";
+import Link from "next/link";
 
 const plans = [
   {
@@ -18,6 +19,7 @@ const plans = [
     subtitle: "For creators just starting to monetize their communities.",
     discount: "50",
     discountImg: off50,
+    btnLink: "/",
     oldPrice: "$99",
     price: "$49",
     period: "/ per month",
@@ -39,6 +41,7 @@ const plans = [
     subtitle: "For mid-sized communities ready to scale automation",
     discount: "40",
     discountImg: off40,
+    btnLink: "/",
     oldPrice: "$119",
     price: "$69",
     period: "/ per month",
@@ -61,6 +64,7 @@ const plans = [
       "For established communities or agencies managing multiple servers.",
     discount: "25",
     discountImg: off25,
+    btnLink: "/",
     oldPrice: "$199",
     price: "$149",
     period: "/ per month",
@@ -84,6 +88,7 @@ const plans = [
       "For brands, networks, or SaaS platforms integrating Upgrade.Chat tech.",
     discount: null,
     discountImg: null,
+    btnLink: "/",
     oldPrice: null,
     price: "Custom",
     period: "",
@@ -104,6 +109,7 @@ const plans = [
     subtitle: "For creators just starting to monetize their communities.",
     discount: "50",
     discountImg: off50,
+    btnLink: "/",
     oldPrice: "$1,188",
     price: "$588",
     period: "/ per month",
@@ -125,6 +131,7 @@ const plans = [
     subtitle: "For mid-sized communities ready to scale automation",
     discount: "40",
     discountImg: off40,
+    btnLink: "/",
     oldPrice: "$1,428",
     price: "$828",
     period: "/ per month",
@@ -147,6 +154,7 @@ const plans = [
       "For established communities or agencies managing multiple servers.",
     discount: "25",
     discountImg: off25,
+    btnLink: "/",
     oldPrice: "$2,388",
     price: "$1,718",
     period: "/ per month",
@@ -170,6 +178,7 @@ const plans = [
       "For brands, networks, or SaaS platforms integrating Upgrade.Chat tech.",
     discount: null,
     discountImg: null,
+    btnLink: "/",
     oldPrice: null,
     price: "Custom",
     period: "",
@@ -190,6 +199,7 @@ const plans = [
     subtitle: "For creators just starting to monetize their communities.",
     discount: "50",
     discountImg: off50,
+    btnLink: "/",
     oldPrice: "$795",
     price: "$279",
     period: "/ per month",
@@ -213,6 +223,7 @@ const plans = [
     subtitle: "For mid-sized communities ready to scale automation",
     discount: "40",
     discountImg: off40,
+    btnLink: "/",
     oldPrice: "$1,995",
     price: "$699",
     period: "/ per month",
@@ -239,6 +250,7 @@ const plans = [
       "For established communities or agencies managing multiple servers.",
     discount: "25",
     discountImg: off25,
+    btnLink: "/",
     oldPrice: "$2,388",
     price: "$1,718",
     period: "/ per month",
@@ -269,6 +281,7 @@ const plans = [
       "For brands, networks, or SaaS platforms integrating Upgrade.Chat tech.",
     discount: null,
     discountImg: null,
+    btnLink: "/",
     oldPrice: null,
     price: "Custom",
     period: "",
@@ -400,15 +413,15 @@ const Pricing = () => {
               </div>
 
               {/* Button */}
-              <button
-                className={`mt-6 w-full py-3 rounded-xl font-clashDisplay font-semibold tracking-widest ${
+              <Link href="/" 
+                className={`mt-6 w-full p-3 block rounded-xl font-clashDisplay font-semibold tracking-widest text-center ${
                   plan.highlight
                     ? "bg-white text-commonRed shadow-[0_0_20px_#ff2d2d]"
                     : "bg-linear-to-r from-[#ffffff0d] to-transparent border border-white/30 text-white"
                 }`}
               >
                 {plan.button}
-              </button>
+              </Link>
 
               {/* Feature List */}
               <div className="mt-6 pt-6 border-t border-white/10 space-y-4">
