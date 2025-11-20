@@ -10,8 +10,6 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-commonRed: var(--commonRed);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 
   /* fonts */
   --font-clashDisplay: "Clash Display", Arial, sans-serif;
@@ -136,6 +134,7 @@ html {
   visibility: visible;
 }
 
+/* for all gradient text */
 .gradient-text {
   background: linear-gradient(180deg, #ffffff 30%, #999999 100%);
   color: transparent;
@@ -144,13 +143,14 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+/* for border text */
 .textStroke {
   -webkit-text-stroke: 1px #ca0b0b;
 }
 
+/* background after clock numbers */
 .clockBg {
   border-radius: 8px;
-  /* opacity: 0.5; */
   border: 1px solid #ca0b0b;
   box-sizing: border-box;
   background: linear-gradient(
@@ -161,8 +161,8 @@ html {
   backdrop-filter: blur(32.5px);
 }
 
+/* background after usercards */
 .userBg {
-  /* border: 2px solid transparent; */
   background: linear-gradient(
     195.05deg,
     rgba(202, 11, 11, 0.1) 0%,
@@ -172,6 +172,7 @@ html {
   backdrop-filter: blur(200px);
 }
 
+/* background after pricing cards */
 .pricingBg {
   background: linear-gradient(
     195.05deg,
@@ -182,15 +183,18 @@ html {
   backdrop-filter: blur(20px);
 }
 
+/* gradient for border */
 .iconbgBorder {
   box-sizing: border-box;
   background: linear-gradient(0deg, #000 0%, #ffffff2c 64%);
 }
 
+/* red to white gradient */
 .redTowhite {
   background: linear-gradient(120.79deg, #ca0b0b80 0%, #ffffff61 40.15%);
 }
 
+/* background for act box */
 .actNowBox {
   mix-blend-mode: normal;
   border: 1px solid transparent;
@@ -227,6 +231,55 @@ html {
 
 .clockBg {
   animation: flip 1s ease-in-out;
+}
+
+/* pricing section css */
+
+.gradient-red {
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+}
+
+.text-glow-red {
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.border-glow-red {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.neon-border {
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), inset 0 0 10px rgba(255, 0, 0, 0.2);
+}
+
+.neon-border-gold {
+  border: 2px solid #eab308;
+  box-shadow: 0 0 10px rgba(234, 179, 8, 0.5),
+    inset 0 0 10px rgba(234, 179, 8, 0.2);
+}
+
+.neon-border-green {
+  border: 2px solid #10b981;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5),
+    inset 0 0 10px rgba(16, 185, 129, 0.2);
+}
+
+.strikethrough-diagonal {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.strikethrough-diagonal::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  width: calc(100% + 4px);
+  height: 0.5px;
+  background-color: #ef4444;
+  transform: translateY(-50%) rotate(-12deg);
+  transform-origin: center;
 }
 
 @media (max-width: 767px) {

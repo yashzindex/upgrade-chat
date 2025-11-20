@@ -40,7 +40,7 @@ const Users = () => {
           {cardData.map((card, index) => (
             <Link href={card.url} 
               key={index}
-              className="relative group rounded-4xl border border-commonRed/50"
+              className="relative z-10 group rounded-4xl border border-commonRed/50"
             >
               <div className="relative h-full rounded-4xl userBg p-5 md:p-7 xl:p-10">
                 <div className="space-y-4 md:space-y-6 xl:space-y-8">
