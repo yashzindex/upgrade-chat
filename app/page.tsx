@@ -6,6 +6,7 @@ import VanishIn from "./components/vanishIn";
 import Works from "./components/works";
 import FewDays from "./components/fewDays";
 import Unmissiable from "./components/unmissiable";
+import ExclusiveCashRewards from "./components/exclusiveCashRewards";
 import HowEasy from "./components/howEasy";
 import ActNow from "./components/actNow";
 import Users from "./components/users";
@@ -43,6 +44,7 @@ export default function Home() {
           <Image src={unmissable} alt="unmissable" className="w-full h-full" />
         </div>
       </div>
+      <ExclusiveCashRewards />
       <Offer />
       <Users />
       <div className="relative">
