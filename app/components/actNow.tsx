@@ -9,15 +9,18 @@ import actNowIcon3 from "@/public/image/svg/actNowIcon3.svg";
 const items = [
   {
     icon: actNowIcon1,
-    text: "These offers are never coming back",
+    title: "Limited Time Offer",
+    text: "Early access to new features and premium AI models before anyone else.",
   },
   {
     icon: actNowIcon2,
-    text: "Black Friday = highest transaction season of the year",
+    title: "Best Value Guarantee",
+    text: "We guarantee this is the best price you'll see all year. No exceptions.",
   },
   {
     icon: actNowIcon3,
-    text: "Competitors are taking bigger cuts… we’re paying YOU more",
+    title: "Instant Activation",
+    text: "Start using your credits and benefits immediately after purchase.",
   },
 ];
 
@@ -26,11 +29,11 @@ const ActNow = () => {
     <section className="relative py-9 md:py-12 xl:py-17 xxl:py-22">
       <div className="container">
         <div className="space-y-3 text-center mb-8 md:mb-10 xl:mb-12">
-          <h5 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize text-center">
+          <h5 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-68 leading-tight -tracking-tight capitalize text-center">
             Why Act Now?
           </h5>
 
-          <div className="text-white font-poppins500 text-xl md:text-2xl xl:text-[28px]">
+          <div className="text-white font-poppins500 text-xl md:text-2xl xl:text-28">
             <p>Every day you wait is money left on the table.</p>
           </div>
         </div>
@@ -39,7 +42,10 @@ const ActNow = () => {
           <div className="p-px">
             <div className="relative p-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
               {items.map((item, index) => (
-                <div key={index} className="relative z-10 py-3 px-0 xl:p-5 space-y-3 ms:space-y-5 xl:space-y-8">
+                <div
+                  key={index}
+                  className="relative z-10 py-3 px-0 xl:p-5 space-y-3 ms:space-y-5 xl:space-y-8"
+                >
                   <div className="size-14 whiteCircle rounded-full flex justify-center items-center">
                     <Image
                       src={item.icon}
@@ -47,8 +53,13 @@ const ActNow = () => {
                       className="size-6"
                     />
                   </div>
-                  <div className="text-white font-inter600 text-base md:text-lg xl:text-xl space-y-2">
-                    <p>{item.text}</p>
+                  <div className="space-y-4">
+                    <div className="gradient-textLtr font-cld600 text-xl leading-snug tracking-normal">
+                      <p>{item.title}</p>
+                    </div>
+                    <div className="text-[#E6E6E6] font-satoshi400 text-base space-y-2">
+                      <p>{item.text}</p>
+                    </div>
                   </div>
                 </div>
               ))}

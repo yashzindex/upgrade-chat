@@ -15,29 +15,27 @@ interface Feature {
 const features: Feature[] = [
   {
     icon: icon1,
-    title: "Save More. Earn More. Win More.",
+    title: "Incredible Value",
     description:
-      "Upgrade Chat’s biggest sale ever is here - up to 50% OFF on all plans + $100 cashback on your first $1,000 earned.",
+      "Get up to 65% OFF plus $500 Cash Rewards on your first sales milestones. This is our biggest offer of the year.",
   },
   {
     icon: icon2,
-    title: "Free Money, Real Fast",
+    title: "Exclusive Access",
     description:
-      "Earn your first $1,000 → we match it with $100. Instant upgrade.",
+      "Early access to new features and premium AI models before anyone else.",
   },
   {
     icon: icon3,
-    title: "Double the Power for Less",
-    description: [
-      "Save up to 50% on plans and get exclusive holiday credit bundles.",
-      "Your community starts earning more while you pay less.",
-    ],
+    title: "No Hidden Charges",
+    description: 
+      "What you see is what you pay. No surprise fees or hidden costs.",
   },
   {
     icon: icon4,
-    title: "Your Growth, On Turbo Mode",
+    title: "Premium Support",
     description:
-      "Daily payouts, content locking, guest checkout — your community becomes your business overnight.",
+      "Get priority customer support and dedicated account management.",
   },
 ];
 
@@ -46,20 +44,20 @@ const Unmissiable: React.FC = () => {
     <section className="py-10 md:py-13 xl:py-16 xxl:py-21">
       <div className="container">
         <div className="text-center mb-5 md:mb-10 xl:mb-13">
-          <div className="p-2 md:p-4 w-fit mx-auto mb-3 bg-white text-commonRed font-clashDisplay font-semibold uppercase text-lg sm:text-2xl md:text-3xl xxl:text-[32px]">
+          <div className="p-2 md:p-4 w-fit mx-auto mb-3 bg-white text-textRed font-clashDisplay font-semibold uppercase text-lg sm:text-2xl md:text-3xl xxl:text-32">
             <p>Free Money, Real Fast</p>
           </div>
 
-          <h3 className="gradient-text font-clashDisplay font-medium text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize">
+          <h3 className="gradient-text font-clashDisplay font-medium text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-68 leading-tight -tracking-tight capitalize">
             Why This Deal is Unmissable?
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 lg:*:border-x lg:*:first:border-l max-lg:*:border-b *:border-[#ffffff2c]">
+        <div className="grid grid-cols-1 lg:grid-cols-4 lg:*:border-x lg:*:first:border-l max-lg:*:border-b *:border-[#ffffff1f]">
           {features.map(({ icon, title, description }, index) => (
             <div
               key={index}
-              className="pt-8 xl:pt-12.5 px-0 pb-5 xl:px-8 xl:pb-8 flex flex-col justify-start"
+              className="pt-8 xl:pt-12.5 px-0 pb-5 xl:px-8 xl:pb-6 flex flex-col justify-start"
             >
               <div className="mb-4 lg:mb-7.5 space-y-5 lg:space-y-7.5">
                 <div className="w-fit h-fit rounded-xl p-px iconbgBorder">

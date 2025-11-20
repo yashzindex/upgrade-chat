@@ -305,11 +305,11 @@ const Pricing = () => {
       <div className="container">
         {/* Header */}
         <div className="text-center space-y-3 mb-12 md:mb-15 xl:mb-20">
-          <h6 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize">
+          <h6 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-68 leading-tight -tracking-tight capitalize">
             Pick Your Plan. <br /> Multiply Your Earnings.
           </h6>
 
-          <div className="text-white font-poppins500 text-xl md:text-2xl xl:text-[28px] xxl:px-9">
+          <div className="text-white font-poppins500 text-xl md:text-2xl xl:text-28 xxl:px-9">
             <p>
               Whether you’re just starting or already scaling, every plan gets
               the Black Friday power-up — up to 50% OFF + $100 cashback on your
@@ -405,7 +405,7 @@ const Pricing = () => {
                   </p>
                 )}
                 <div className="flex items-center gap-3">
-                  <p className="text-white font-clashDisplay text-[40px] xxl:text-[44px] font-medium leading-none">
+                  <p className="text-white font-clashDisplay text-40 xxl:text-[44px] font-medium leading-none">
                     {plan.price}
                   </p>
                   <p className="text-white/60 text-sm font-grotesk400">{plan.period}</p>

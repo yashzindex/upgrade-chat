@@ -61,7 +61,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
             </div>
           ))}
         </div>
-        <p className="text-white font-sfPro400 text-base sm:text-2xl md:text-3xl xl:text-[32px] uppercase tracking-wider mt-3 sm:mt-4.5">
+        <p className="text-white font-sfPro400 text-base sm:text-2xl md:text-3xl xl:text-32 uppercase tracking-wider mt-3 sm:mt-4.5">
           Days
         </p>
       </div>
@@ -78,7 +78,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
             </div>
           ))}
         </div>
-        <p className="text-white font-sfPro400 text-base sm:text-2xl md:text-3xl xl:text-[32px] uppercase tracking-wider mt-3 sm:mt-4.5">
+        <p className="text-white font-sfPro400 text-base sm:text-2xl md:text-3xl xl:text-32 uppercase tracking-wider mt-3 sm:mt-4.5">
           Hours
         </p>
       </div>
@@ -95,7 +95,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
             </div>
           ))}
         </div>
-        <p className="text-white font-sfPro400 text-base sm:text-2xl md:text-3xl xl:text-[32px] uppercase tracking-wider mt-3 sm:mt-4.5">
+        <p className="text-white font-sfPro400 text-base sm:text-2xl md:text-3xl xl:text-32 uppercase tracking-wider mt-3 sm:mt-4.5">
           Minutes
         </p>
       </div>

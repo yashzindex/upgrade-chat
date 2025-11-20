@@ -22,6 +22,13 @@ const marqueeItems = [
   "BLACK FRIDAY OFFERS",
   "BLACK FRIDAY OFFERS",
   "BLACK FRIDAY OFFERS",
+  "BLACK FRIDAY OFFERS",
+  "BLACK FRIDAY OFFERS",
+  "BLACK FRIDAY OFFERS",
+  "BLACK FRIDAY OFFERS",
+  "BLACK FRIDAY OFFERS",
+  "BLACK FRIDAY OFFERS",
+  "BLACK FRIDAY OFFERS",
 ];
 
 const Hero = () => {
@@ -43,12 +50,12 @@ const Hero = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 relative z-10">
               {/* title tag */}
               <div className="lg:col-span-9 max-lg:order-2">
-                <div className="h-full flex flex-col justify-center py-10 lg:pt-22 lg:pb-12">
+                <div className="h-full flex flex-col justify-center py-10 lg:pt-22 lg:pb-10 lg:pr-2">
                   <div className="mb-15 space-y-3 max-md:text-center">
-                    <h1 className="font-clashDisplay font-bold gradient-text text-4xl sm:text-5xl xl:text-6xl xxl:text-7xl tracking-[1%]">
+                    <h1 className="font-clashDisplay font-bold gradient-text text-4xl sm:text-5xl xl:text-6xl xxl:text-7xl tracking-[1px]">
                       Biggest Deal Ever...
                     </h1>
-                    <div className="text-white/90 font-sfPro400 text-xl md:text-2xl xl:text-[28px] xxl:text-[32px] space-y-2">
+                    <div className="text-white/90 font-sfPro400 text-xl md:text-2xl xl:text-28 xxl:text-32 space-y-2">
                       <p>
                         This Black Friday, we’re giving away more than ever
                         before
@@ -57,24 +64,24 @@ const Hero = () => {
                   </div>
                   <div className="flex max-md:flex-col items-center gap-6 xl:gap-8">
                     <Link
-                      href="/"
-                      className="text-white font-clashDisplay font-semibold text-base md:text-lg xl:text-2xl xxl:text-[28px] tracking-wide leading-tight md:leading-[72%] text-center uppercase bg-commonRed border-2 border-commonRed shadow-redBtnShadow p-4 sm:px-5 sm:py-5 xl:py-6 hover:bg-commonRed/50 transition-all duration-300"
+                      href="#pricing"
+                      className="text-white font-clashDisplay font-semibold text-base md:text-lg xl:text-2xl xxl:text-28 tracking-wider leading-[110%] text-center uppercase bg-commonRed border-2 border-commonRed shadow-redBtnShadow p-4 sm:px-5 sm:py-4 hover:bg-commonRed/50 transition-all duration-300"
                     >
-                      Get My $100 Bonus
+                      Get $500 Cash Rewards
                     </Link>
                     <Link
-                      href="/"
-                      className="text-white font-clashDisplay font-semibold text-base md:text-lg xl:text-2xl xxl:text-[28px] tracking-wide leading-tight md:leading-[72%] text-center uppercase border-2 border-white p-4 sm:px-5 sm:py-5 xl:py-6 hover:text-commonRed hover:border-commonRed transition-all duration-300"
+                      href="#pricing"
+                      className="text-white font-clashDisplay font-semibold text-base md:text-lg xl:text-2xl xxl:text-28 tracking-wider leading-[110%] text-center uppercase border-2 border-white p-4 sm:px-5 sm:py-4 hover:text-commonRed hover:border-commonRed transition-all duration-300"
                     >
                       {" "}
-                      Claim My Black Friday Credits
+                       Claim My Black Friday Credits
                     </Link>
                   </div>
                 </div>
               </div>
 
               {/* offer tag */}
-              <div className="lg:col-span-3 max-lg:order-1 lg:-mt-12 xl:-mt-20">
+              <div className="lg:col-span-3 max-lg:order-1 lg:-mt-12 xl:-mt-24">
                 <div className="w-50/100 mx-auto lg:w-full h-full">
                   <Image
                     src={offerTagHero}
@@ -94,7 +101,7 @@ const Hero = () => {
               {marqueeItems.map((item, index) => (
                 <div
                   key={index}
-                  className="px-8 font-clashDisplay font-semibold text-black text-base md:text-lg xl:text-2xl xxl:text-[28px] leading-tight whitespace-nowrap"
+                  className="px-8 font-clashDisplay font-semibold text-black text-base md:text-lg xl:text-2xl xxl:text-28 leading-tight whitespace-nowrap"
                 >
                   <p>{item}</p>
                 </div>

@@ -8,26 +8,27 @@ import lineVector from "@/public/image/svg/lineVector.svg";
 const steps = [
   {
     title: "Step 01",
-    description: "Connect Your Chat",
-    details: ["whatsapp", "telegram", "discord"],
+    description: "Choose Your Plan",
+    text: "Pick the plan that works best for you",
+    details: [],
   },
   {
     title: "Step 02",
-    description: "Add Plans & Products",
+    description: "Apply Discount",
     details: [],
-    text: "Subscriptions, digital goods, memberships.",
+    text: "Your 65% discount applies automatically",
   },
   {
     title: "Step 03",
-    description: "Start Selling Instantly",
+    description: "Start Earning",
     details: [],
-    text: "Members pay → you get paid daily.",
+    text: "Get $500 Cash Rewards on your first sales milestones",
   },
   {
     title: "Step 04",
-    description: "Watch your growth multiply",
+    description: "Enjoy Your Benefits",
     details: [],
-    text: "Cash in your Black Friday Bonus + 50% savings",
+    text: "Start using all premium features immediately",
   },
 ];
 
@@ -35,7 +36,7 @@ const HowEasy = () => {
   return (
     <section className="relative py-9 md:py-12 xl:py-15 xxl:py-17.5">
       <div className="container">
-        <h6 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize text-center">
+        <h6 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-68 leading-tight -tracking-tight capitalize text-center">
           How Easy Is It?
         </h6>
 
@@ -56,7 +57,7 @@ const HowEasy = () => {
                   </div>
                   <div className="relative rounded-bl-xl bg-black p-5 md:p-8 xxl:p-10">
                     <div className="relative space-y-3 md:space-y-5 z-10">
-                      <div className="text-white text-xl sm:text-2xl md:text-[26px] font-clashDisplay font-medium leading-snug">
+                      <div className="text-white text-xl sm:text-2xl md:text-[26px] font-clashDisplay font-medium leading-snug xl:pr-12">
                         <p>{step.description}</p>
                       </div>
                       <div className="flex flex-wrap gap-2.5 font-urb500 text-[#999999] text-base md:text-lg font-medium">

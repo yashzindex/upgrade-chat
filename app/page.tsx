@@ -19,17 +19,24 @@ import PricingSection from "./components/PricingSection";
 export default function Home() {
   const faqItems: FaqItem[] = [
     {
-      question: "Do I really get $100 free?",
-      answer: "Yes. Earn your first $1000, and we’ll instantly match it.",
-    },
-    {
-      question: "I’m already a user. What’s in it for me?",
+      question: "Who can get this deal?",
       answer:
-        "Exclusive discounted credits + holiday perks that only exist this weekend.",
+        "Both new and existing users can take advantage of this Black Friday offer. New users get 65% OFF plus $500 Cash Rewards, while existing users can upgrade or renew with the same benefits.",
     },
     {
-      question: "What’s the catch?",
-      answer: "There isn’t one. No fees, no strings. Just pure growth.",
+      question: "How long does this offer last?",
+      answer:
+        "This is a limited-time Black Friday offer. Check the countdown timer to see exactly how much time is left. Once the timer hits zero, the deal is gone.",
+    },
+    {
+      question: "Can I combine this with other offers?",
+      answer:
+        "The Black Friday discount cannot be combined with other promotional offers, but the Cash Rewards are stackable with your existing credits.",
+    },
+    {
+      question: "What are the Cash Rewards?",
+      answer:
+        "You can earn $500 in Cash Rewards as credit that you can use towards future purchases or upgrades on the platform. It's added to your account after hitting your first sales milestones.",
     },
   ];
 
@@ -48,7 +55,9 @@ export default function Home() {
       <div className="relative">
         <ActNow />
         {/* <Pricing /> */}
-        <PricingSection />
+        <div id="pricing">
+          <PricingSection />
+        </div>
 
         <div className="absolute top-0 left-0 right-0 h-70/100 -z-1">
           <Image src={actPlanBg} alt="actPlanBg" className="w-full h-full" />

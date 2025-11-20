@@ -1,7 +1,7 @@
 import React from "react";
 import offerBg from "@/public/image/offerBg.png";
 import Image from "next/image";
-import offerImg from "@/public/image/offerImg.png";
+import offerImg from "@/public/image/svg/offerImg.svg";
 import Marquee from "react-fast-marquee";
 
 const marqueeItems = [
@@ -21,7 +21,7 @@ const marqueeItems = [
 ];
 const Offer = () => {
   return (
-    <section className="relative overflow-hidden pt-20 md:pt-30 xl:pt-40 pb-10 md:pb-20">
+    <section className="relative overflow-hidden pt-20 md:pt-30 pb-10 md:pb-20">
       <div className="container">
         <div className="w-full max-w-258 mx-auto relative z-10">
           <Image src={offerImg} alt="offerImg" className="w-full h-full" />
@@ -35,7 +35,7 @@ const Offer = () => {
           {marqueeItems.map((item, index) => (
             <div
               key={index}
-              className="px-8 text-white font-clashDisplay font-semibold text-base md:text-lg lg:text-2xl xx:text-3xl xxl:text-4xl leading-[80%] whitespace-nowrap"
+              className="px-8 text-white font-clashDisplay font-semibold text-base md:text-lg lg:text-2xl xx:text-3xl xxl:text-4xl leading-[80%] tracking-wide whitespace-nowrap"
             >
               <p>{item}</p>
             </div>
