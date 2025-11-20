@@ -4,12 +4,14 @@
   --background: #ffffff;
   --foreground: #171717;
   --commonRed: #ca0b0b;
+  --textRed: #F2181E;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-commonRed: var(--commonRed);
+  --color-textRed: var(--textRed);
 
   /* fonts */
   --font-clashDisplay: "Clash Display", Arial, sans-serif;
@@ -28,6 +30,12 @@
   --shadow-9xl: 0px 0px 20.4px 3px #f2181e;
   --shadow-redBtnShadow: 2px 1px 77.7px 0 #ca0b0b;
   --shadow-owner: 0px 0px 26.9px -1px rgba(237, 5, 11, 0.78);
+
+  /* font size */
+  --text-28: 28px;
+  --text-32: 32px;
+  --text-40: 40px;
+  --text-68: 68px;
 
   /* breakpoints */
   --breakpoint-xxs: 389px;
@@ -143,6 +151,15 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+/* left to right */
+.gradient-textLtr {
+  background: linear-gradient(180.00deg, #D1D0D3 0%, #FFFFFF 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* for border text */
 .textStroke {
   -webkit-text-stroke: 1px #ca0b0b;
@@ -153,11 +170,7 @@ html {
   border-radius: 8px;
   border: 1px solid #ca0b0b;
   box-sizing: border-box;
-  background: linear-gradient(
-    190deg,
-    rgba(202, 11, 11, 0.69) 0%,
-    rgba(202, 11, 11, 0.1) 100%
-  );
+  background: linear-gradient(180.00deg, rgba(202, 11, 11, 0.69) 0%, rgba(202, 11, 11, 0.10) 100%);
   backdrop-filter: blur(32.5px);
 }
 

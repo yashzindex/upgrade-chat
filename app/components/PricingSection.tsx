@@ -109,7 +109,7 @@ export default function PricingSection() {
               onClick={() => setPricingPeriod('monthly')}
               className={`px-6 py-2 rounded-md text-sm sm:text-base font-medium transition-all ${
                 pricingPeriod === 'monthly'
-                  ? 'bg-gradient-to-br from-emerald-600 to-green-700 text-white shadow-lg shadow-emerald-600/20'
+                  ? 'bg-linear-to-br from-emerald-600 to-green-700 text-white shadow-lg shadow-emerald-600/20'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -119,7 +119,7 @@ export default function PricingSection() {
               onClick={() => setPricingPeriod('annual')}
               className={`px-6 py-2 rounded-md text-sm sm:text-base font-medium transition-all ${
                 pricingPeriod === 'annual'
-                  ? 'bg-gradient-to-br from-emerald-600 to-green-700 text-white shadow-lg shadow-emerald-600/20'
+                  ? 'bg-linear-to-br from-emerald-600 to-green-700 text-white shadow-lg shadow-emerald-600/20'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -129,7 +129,7 @@ export default function PricingSection() {
               onClick={() => setPricingPeriod('lifetime')}
               className={`px-6 py-2 rounded-md text-sm sm:text-base font-medium transition-all ${
                 pricingPeriod === 'lifetime'
-                  ? 'bg-gradient-to-br from-emerald-600 to-green-700 text-white shadow-lg shadow-emerald-600/20'
+                  ? 'bg-linear-to-br from-emerald-600 to-green-700 text-white shadow-lg shadow-emerald-600/20'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -137,17 +137,17 @@ export default function PricingSection() {
             </button>
           </div>
           {pricingPeriod === 'monthly' && (
-            <span className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
+            <span className="bg-linear-to-r from-blue-600 to-cyan-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
               MAXIMUM FLEXIBILITY - CANCEL ANYTIME
             </span>
           )}
           {pricingPeriod === 'annual' && (
-            <span className="bg-gradient-to-r from-orange-600 to-red-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
+            <span className="bg-linear-to-r from-orange-600 to-red-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
               Save 65% - Exlusive Black Friday Deal!
             </span>
           )}
           {pricingPeriod === 'lifetime' && (
-            <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
+            <span className="bg-linear-to-r from-purple-600 via-pink-600 to-red-600 text-white text-xs px-3 py-1 rounded-full font-semibold">
               UNBEATABLE VALUE - LIFETIME SAVINGS OVER 65%
             </span>
           )}
@@ -258,7 +258,7 @@ function PricingCard({ plan, pricingPeriod }: { plan: PricingPlan; pricingPeriod
       
       {/* Card with overflow-hidden for header clipping */}
       <div
-        className={`relative bg-gradient-to-b from-gray-900 to-black border rounded-2xl overflow-hidden  pricingBg ${
+        className={`relative bg-linear-to-b from-gray-900 to-black border rounded-2xl overflow-hidden  pricingBg ${
           isHighlighted
             ? `${borderColor} ${neonBorderClass}`
             : 'border-gray-800'
@@ -359,7 +359,7 @@ function PricingCard({ plan, pricingPeriod }: { plan: PricingPlan; pricingPeriod
           {plan.features.map((feature, index) => (
             <div key={index} className="flex items-start gap-2">
               <svg
-                className="w-5 h-5 mt-0.5 flex-shrink-0"
+                className="w-5 h-5 mt-0.5 shrink-0"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

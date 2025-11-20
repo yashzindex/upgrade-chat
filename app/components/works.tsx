@@ -12,38 +12,38 @@ const testimonials = [
   {
     id: 1,
     image: owner1,
-    text: "I made more in my first week on Upgrade Chat than a whole month on Patreon.",
-    author: "~ Community Owner",
+    text: "Saved us thousands in operational costs. The ROI is unbeatable.",
+    author: "~ Mike Chen (Startup Founder)",
   },
   {
     id: 2,
     image: owner2,
-    text: "Upgrade Chat changed my business. My community converted instantly.",
-    author: "~ Server Creator",
+    text: "Game-changer for my workflow. Can't imagine working without it now.",
+    author: "~ Emily Rodriguez (Creater)",
   },
   {
     id: 3,
     image: owner3,
-    text: "The best decision I've made. Monetization is effortless now.",
-    author: "~ Digital Creator",
+    text: "The best investment I've made this year. The AI capabilities are incredible!",
+    author: "~ Sarah Johnson (Director)",
   },
   {
     id: 4,
     image: owner1,
-    text: "I made more in my first week on Upgrade Chat than a whole month on Patreon.",
-    author: "~ Community Owner",
+    text: "Saved us thousands in operational costs. The ROI is unbeatable.",
+    author: "~ Mike Chen (Startup Founder)",
   },
   {
     id: 5,
     image: owner2,
-    text: "Upgrade Chat changed my business. My community converted instantly.",
-    author: "~ Server Creator",
+    text: "Game-changer for my workflow. Can't imagine working without it now.",
+    author: "~ Emily Rodriguez (Creater)",
   },
   {
     id: 6,
     image: owner3,
-    text: "The best decision I've made. Monetization is effortless now.",
-    author: "~ Digital Creator",
+    text: "The best investment I've made this year. The AI capabilities are incredible!",
+    author: "~ Sarah Johnson (Director)",
   },
 ];
 
@@ -63,7 +63,7 @@ const Works = () => {
 
       <div className="container">
         <div className="mb-9 md:mb-10 xl:mb-13 relative z-10">
-          <h6 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-[68px] leading-tight -tracking-tight capitalize text-center">
+          <h6 className="gradient-text font-clashDisplay font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl xxl:text-68 leading-tight -tracking-tight capitalize text-center">
             Proof That It Works
           </h6>
         </div>
@@ -107,7 +107,7 @@ const Works = () => {
 
       <div className="relative px-5 z-10">
         <Link
-          href="/"
+          href="#pricing"
           className="w-fit mx-auto bg-white shadow-owner rounded-xl flex max-md:flex-col items-center gap-3 md:gap-2 py-4 md:py-2 px-5 max-md:text-center"
         >
           <div className="flex items-center -space-x-1.5 md:-space-x-3.5">
@@ -122,8 +122,8 @@ const Works = () => {
             </span>
           </div>
           <div className="flex max-md:flex-col items-center gap-3">
-            <p className="text-commonRed font-clashDisplay font-medium text-xl leading-tight">
-              Join 100,000+ Creators Who Already Made the Switch
+            <p className="text-commonRed font-clashDisplay font-semibold text-xl leading-tight">
+              Join <span className="font-bold">100,000+</span> Creators Who Already Made the Switch
             </p>
             <Arrow />
           </div>

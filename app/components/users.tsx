@@ -11,11 +11,11 @@ const cardData = [
     url: "/",
     title: "For New Users",
     features: [
-      "Win $100 joining Cash on your first transaction",
-      "Get up to 50% OFF on all plans tailored to your needs.",
+      "Win $500 Cash Rewards on your first transaction",
+      "Get up to 65% OFF on all plans tailored to your needs.",
       "Start selling subs, courses, and digital goods today",
     ],
-    buttonText: "Claim My $100 Bonus + 50% OFF Now",
+    buttonText: "Claim $500 Cash Rewards + 65% OFF Now",
     buttonStyle: "glow",
   },
   {
@@ -27,7 +27,7 @@ const cardData = [
       "Priority support for all holiday campaigns",
       "Unlock hidden growth perks",
     ],
-    buttonText: "Unlock My 50% OFF &  Black Friday Credits",
+    buttonText: "Unlock My 65% OFF &  Black Friday Credits",
     buttonStyle: "outline",
   },
 ];
@@ -76,9 +76,9 @@ const Users = () => {
                 </ul>
 
                 {/* Button */}
-                <button className="mt-8 md:mt-10 w-full border border-white rounded-xl py-4 px-5 text-white font-clashDisplay font-semibold text-base md:text-lg xl:text-xl leading-tight tracking-wide group-hover:bg-white group-hover:text-commonRed group-hover:shadow-9xl transition-all duration-300">
+                <Link href="#pricing" className="mt-8 md:mt-10 block w-full border border-white rounded-xl py-4 px-5 text-white font-clashDisplay font-semibold text-base md:text-lg xl:text-xl leading-tight tracking-wide group-hover:bg-white group-hover:text-commonRed group-hover:shadow-9xl transition-all duration-300">
                   {card.buttonText}
-                </button>
+                </Link>
               </div>
 
               {/* rotate border */}
