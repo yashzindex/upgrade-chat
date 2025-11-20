@@ -275,7 +275,7 @@ function PricingCard({ plan, pricingPeriod }: { plan: PricingPlan; pricingPeriod
         {/* Background SVG */}
         <img 
           src={assets?.background} 
-          alt="" 
+          alt="/" 
           className="absolute inset-0 w-full h-full object-cover"
         />
         
@@ -336,6 +336,7 @@ function PricingCard({ plan, pricingPeriod }: { plan: PricingPlan; pricingPeriod
             <div className="text-xl sm:text-2xl font-bold">Contact Sales</div>
           )}
         </div>
+        
 
         <button 
           className="w-full text-white font-bold py-3 text-sm sm:text-base rounded-lg mb-6 transition-all flex items-center justify-center gap-2"
@@ -348,7 +349,7 @@ function PricingCard({ plan, pricingPeriod }: { plan: PricingPlan; pricingPeriod
         >
           <img 
             src={assets?.icon} 
-            alt=""
+            alt="/"
             className="w-5 h-5 sm:w-6 sm:h-6"
           />
           <span>{(plan.monthlyPriceBF > 0 || plan.monthlyPriceRegular > 0) ? 'Get Started' : 'Contact Us'}</span>
