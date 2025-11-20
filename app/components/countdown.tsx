@@ -48,54 +48,54 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   };
 
   return (
-    <div className="grid max-[480px]:grid-cols-1 grid-cols-3 gap-5 lg:gap-9 justify-center items-center">
+    <div className="grid grid-cols-3 gap-5 lg:gap-9 justify-center items-center">
       {/* DAYS */}
-      <div className="max-[480px]:grid max-[480px]:grid-cols-2 max-[480px]:justify-between max-[480px]:w-full max-[480px]:text-end text-center">
-        <div className="grid grid-cols-2 gap-3 lg:gap-5">
+      <div className="text-center">
+        <div className="grid grid-cols-2 gap-1.5 sm:gap-3 lg:gap-5">
           {splitDigits(timeLeft.days).map((digit, i) => (
             <div
               key={i}
-              className="clockBg textStroke text-white max-[480px]:text-5xl text-3xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-clashDisplay font-bold leading-snug py-4.5 px-4 flex items-center justify-center rounded-md"
+              className="clockBg textStroke text-white text-2xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-clashDisplay font-bold leading-snug py-4.5 px-4 flex items-center justify-center rounded-md"
             >
               {digit}
             </div>
           ))}
         </div>
-        <p className="text-white font-sfPro400 text-xl sm:text-2xl md:text-3xl xl:text-[32px] uppercase tracking-wider max-[480px]:mt-0 mt-4.5">
+        <p className="text-white font-sfPro400 text-base sm:text-2xl md:text-3xl xl:text-[32px] uppercase tracking-wider mt-3 sm:mt-4.5">
           Days
         </p>
       </div>
 
       {/* HOURS */}
-      <div className="max-[480px]:grid max-[480px]:grid-cols-2 max-[480px]:justify-between max-[480px]:w-full max-[480px]:text-end text-center">
-        <div className="grid grid-cols-2 gap-3 lg:gap-5">
+      <div className="text-center">
+        <div className="grid grid-cols-2 gap-1.5 sm:gap-3 lg:gap-5">
           {splitDigits(timeLeft.hours).map((digit, i) => (
             <div
               key={i}
-              className="clockBg textStroke text-white max-[480px]:text-5xl text-3xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-clashDisplay font-bold leading-snug py-4.5 px-4 flex items-center justify-center rounded-md"
+              className="clockBg textStroke text-white text-2xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-clashDisplay font-bold leading-snug py-4.5 px-4 flex items-center justify-center rounded-md"
             >
               {digit}
             </div>
           ))}
         </div>
-        <p className="text-white font-sfPro400 text-xl sm:text-2xl md:text-3xl xl:text-[32px] uppercase tracking-wider max-[480px]:mt-0 mt-4.5">
+        <p className="text-white font-sfPro400 text-base sm:text-2xl md:text-3xl xl:text-[32px] uppercase tracking-wider mt-3 sm:mt-4.5">
           Hours
         </p>
       </div>
 
       {/* MINUTES */}
-      <div className="max-[480px]:grid max-[480px]:grid-cols-2 max-[480px]:justify-between max-[480px]:w-full max-[480px]:text-end text-center">
-        <div className="grid grid-cols-2 gap-3 lg:gap-5">
+      <div className="text-center">
+        <div className="grid grid-cols-2 gap-1.5 sm:gap-3 lg:gap-5">
           {splitDigits(timeLeft.minutes).map((digit, i) => (
             <div
               key={i}
-              className="clockBg textStroke text-white max-[480px]:text-5xl text-3xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-clashDisplay font-bold leading-snug py-4.5 px-4 flex items-center justify-center rounded-md"
+              className="clockBg textStroke text-white text-2xl sm:text-5xl md:text-6xl xl:text-7xl xxl:text-8xl font-clashDisplay font-bold leading-snug py-4.5 px-4 flex items-center justify-center rounded-md"
             >
               {digit}
             </div>
           ))}
         </div>
-        <p className="text-white font-sfPro400 text-xl sm:text-2xl md:text-3xl xl:text-[32px] uppercase tracking-wider max-[480px]:mt-0 mt-4.5">
+        <p className="text-white font-sfPro400 text-base sm:text-2xl md:text-3xl xl:text-[32px] uppercase tracking-wider mt-3 sm:mt-4.5">
           Minutes
         </p>
       </div>
