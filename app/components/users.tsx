@@ -8,7 +8,7 @@ import Link from "next/link";
 const cardData = [
   {
     type: "new",
-    url: "/",
+    url: "#pricing",
     title: "For New Users",
     features: [
       "Win $500 Cash Rewards on your first transaction",
@@ -20,7 +20,7 @@ const cardData = [
   },
   {
     type: "existing",
-    url: "/",
+    url: "#pricing",
     title: "For Existing Users",
     features: [
       "Black Friday-only credit bundles → Get MORE for less",
@@ -76,9 +76,9 @@ const Users = () => {
                 </ul>
 
                 {/* Button */}
-                <Link href="#pricing" className="mt-8 md:mt-10 block w-full border border-white rounded-xl py-4 px-5 text-white font-clashDisplay font-semibold text-base md:text-lg xl:text-xl leading-tight tracking-wide group-hover:bg-white group-hover:text-commonRed group-hover:shadow-9xl transition-all duration-300">
+                <button className="mt-8 md:mt-10 block w-full border border-white rounded-xl py-4 px-5 text-white font-clashDisplay font-semibold text-base md:text-lg xl:text-xl leading-tight tracking-wide group-hover:bg-white group-hover:text-commonRed group-hover:shadow-9xl transition-all duration-300">
                   {card.buttonText}
-                </Link>
+                </button>
               </div>
 
               {/* rotate border */}
